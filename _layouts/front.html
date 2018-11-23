@@ -21,6 +21,8 @@
       rel="stylesheet"
     />
 
+    <script src="/assets/js/particles.min.js"></script>
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
@@ -68,16 +70,21 @@
       </div>
     </div>
     <div id="splash-header">
+      <div id="particles-js">
       <div class="container">
         <!-- Jumbotron -->
         <div class="teaser">
-          <img src="assets/img/swiss-army-knife-svgrepo-com.svg">
-          <h1>The Swiss Army Knife of Metaprogramming</h1>
-          <!-- <p class="lead">Metaprogramming Language</p> -->
+          <h1>The <br/>
+              Swiss <br/>
+              Army Knife <br/>
+              of<br/>
+              <em>Metaprogramming</em></h1>
+              <img src="assets/img/swiss-army-knife-svgrepo-com.svg">
           <!-- <a class="btn btn-large btn-success" href="/start/">Get started</a> -->
         </div>
 
         <!-- <img src="assets/img/swiss-army-knife.png"> -->
+      </div>
       </div>
     </div>
 
@@ -89,6 +96,12 @@
 
     <div id="footer" >
     </div>
+
+    <script type="text/javascript">
+      particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
 
     <script type="text/javascript">
       var links = document.links;

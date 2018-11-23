@@ -54,7 +54,7 @@ body {
 }
 
 #site-header .container nav ul li:hover {
-  background-color: #FCE910;
+  background-color: #fce910;
   transition: all 0.1s linear;
   /* border-radius: 40px; */
 }
@@ -71,7 +71,7 @@ body {
 
 #site-header .container nav ul li.active {
   /* background-color: #f7c331; */
-  background-color: #FCE910;
+  background-color: #fce910;
   color: white;
   border: 1px solid;
   border-radius: 40px;
@@ -80,8 +80,8 @@ body {
 #splash-header {
   width: 100%;
   /* background-color: rgb(147, 212, 204);#77C9D4; */
-  background-color: #009eae;
-  min-height: 296px;
+  /* background-color: #009eae; */
+  min-height: 500px;
 }
 
 #splash-header .container {
@@ -90,9 +90,29 @@ body {
   min-height: 178px;
 }
 
+#particles-js {
+  z-index: -1;
+  position: absolute;
+  top: 75px;
+  height: 500px;
+  width: 100%;
+  /* background-image: linear-gradient(to right, #009eae , #FCE910); */
+}
+
+.particles-js-canvas-el {
+  z-index: -1;
+  position: relative;
+  top: -220px;
+  /* height: 297px;
+ width: 100%;  */
+  /* background-color: #009eae; */
+  background-image: linear-gradient(to right, #009eae, #fce910);
+}
+
 #splash-header .container .teaser {
   display: flex;
   align-items: center;
+  margin-left: 100px;
 }
 
 #splash-header .container .teaser h1 {
@@ -102,12 +122,17 @@ body {
   /* width: 200px; */
 }
 
-#splash-header .container .teaser img {
-  width: 250px;
-  /* float: right;
-  /* margin-top: -23px; */
-  /* animation: MoveUpDown 10s ease-in-out infinite;  */
+#splash-header .container .teaser h1 em {
+  font-weight: 900;
+  text-shadow: 10px 2px 2px #f1774f;
+  font-style: normal;
+}
 
+#splash-header .container .teaser img {
+  position: relative;
+  left: -150px;
+  top: -22px;
+  animation: MoveUpDown 10s ease-in-out infinite;
 }
 
 /* #splash-header .container img {
@@ -118,21 +143,22 @@ body {
 } */
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     /* margin-top: -23px; */
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   50% {
     /* margin-top: -13px; */
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 }
 
 #content {
-  margin-top: -130px;
+  margin-top: -270px;
   background-color: white;
   border: 1px solid white;
-  border-radius: 5px;;
+  border-radius: 5px;
   margin-bottom: 50px;
   padding: 20px;
 }
@@ -145,7 +171,7 @@ body {
   padding-bottom: 10px;
 }
 
-.jumbotron {
+/* .jumbotron {
   margin-top: 20px;
 }
 
@@ -154,9 +180,9 @@ body {
   font-weight: 200;
   text-transform: capitalize;
   font-style: italic;
-}
+} */
 
 #footer {
-  background-color:#A5A5AF;
+  background-color: #a5a5af;
   min-height: 150px;
 }
