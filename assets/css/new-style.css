@@ -167,7 +167,7 @@ body {
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid #cecece;
+  /* border-bottom: 1px solid #cecece; */
   padding-bottom: 10px;
 }
 
@@ -181,6 +181,49 @@ body {
   text-transform: capitalize;
   font-style: italic;
 } */
+
+#leads {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#leads .lead {
+  font-size: 1.5em;
+}
+
+#leads .first {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#leads .second {
+  width: 48%;
+  /* margin-right: 1em; */
+}
+
+#leads .third {
+  width: 48%;
+  margin-left: 1em;
+}
+
+#leads h1 svg {
+  /* font-size: 1em; */
+  margin-right: 20px;
+  color: #f1774f;
+}
+
+#content .tabbable {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+#content .tabbable h3 {
+  font-weight: 400;
+}
+
+#content .tabbable code {
+  font-size: 1.5em;
+}
 
 #footer {
   background-color: #a5a5af;
